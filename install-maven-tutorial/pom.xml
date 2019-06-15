@@ -22,7 +22,9 @@
 <scm>
     <developerConnection>scm:git:git@github.com:sphanda/Leaning.git</developerConnection>
   </scm>
-<plugin>
+<build>
+    <plugins>
+	<plugin>
     <artifactId>maven-release-plugin</artifactId>
         <version>2.5.2</version>
         <configuration>
@@ -30,7 +32,9 @@
             git@github.com:sphanda/Leaning.git/tags
 			</tagBase>
 		 </configuration>
-</plugin>
+	</plugin>
+	</plugins>
+</build>
 <distributionManagement>
 <repository>
   <id>nexus</id>
